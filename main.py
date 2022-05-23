@@ -140,8 +140,6 @@ class MainWindow(QtWidgets.QMainWindow):
         res_df['$AUD / Share'] = res_df['$AUD / Share'].apply(
             lambda x: '$ {:,.8f}'.format(x))
 
-        print(res_df)
-
         self.resultsWindow = ResultsWindow(self)
         self.resultsWindow.ui.show()
 
